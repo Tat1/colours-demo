@@ -2,6 +2,4 @@
 
 Circular puzzles using colours
 
-
-
-Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
+![alt text](Screen Shot 2017-11-30 at 14.28.42.png "Userface")
