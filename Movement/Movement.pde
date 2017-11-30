@@ -9,6 +9,8 @@ String message = "tickle";
 float x, y; // X and Y coordinates of text
 float hr, vr;  // horizontal and vertical radius of the text
 
+boolean colourChanged = false;
+
 void setup() {
   size(640, 360);
   
@@ -23,12 +25,21 @@ void setup() {
   y = height /2 ;
 }
 
-void draw() {
+    void mousePressed() {
+      
+      if (abs(mouseX - x) < hr &&
+      abs(mouseY - y) < vr) {
+        colourChanged = !colourChanged;
+      }
+   }
+    
+ void draw() {
   // Instead of clearing the background, fade it by drawing
   // a semi-transparent rectangle on top
   fill(0, 10);
   rect(0, 0, width, height);
-  
+
+ 
   // If the cursor is over the text, change the position
   if (abs(mouseX - x) < hr &&
       abs(mouseY - y) < vr) {
@@ -40,7 +51,13 @@ void draw() {
     if (x > width) { x = width; }
     if (y > height) { y = height; }
   }
-  fill(0, 82, 165);
+ 
+  if (colourChanged) {
+    fill(0, 82, 165);
+  } else {
+    fill (225);
+  }
+  
   ellipse (x, y, 60, 60); 
   
   fill(140, 101, 211);
