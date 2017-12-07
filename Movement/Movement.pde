@@ -40,7 +40,7 @@ void setup() {
   rect(0, 0, width, height);
 
  
-  // If the cursor is over the text, change the position
+  // If the cursor is over the object, change the position
   if (abs(mouseX - x) < hr &&
       abs(mouseY - y) < vr) {
     x += random(-5, 5);
@@ -51,7 +51,7 @@ void setup() {
     if (x > width) { x = width; }
     if (y > height) { y = height; }
   }
- 
+ // if the mousePressed happens the colour is changed if not it is left unchanged
   if (colourChanged) {
     fill(0, 82, 165);
   } else {
