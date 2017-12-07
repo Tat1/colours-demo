@@ -3,6 +3,7 @@
 An experimental animation that uses mouse interaction to allow the user to play around with the colours or to make it simpler a circular puzzle using colours. 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-11-30%20at%2014.28.42.png)
 
+
 ### Process
 
 This code is based on the Processing example "tickle" as shown below 
@@ -94,5 +95,7 @@ void draw() {
   //text("tickle", x, y);
 }
 ```
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2012.05.23.png)
+
 Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
 
