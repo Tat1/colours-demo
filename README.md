@@ -145,5 +145,33 @@ void draw() {
 
 I found that the circles moved outside of the screen and wasn't confide to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed.
 
+#### Step 3
+
+```
+@ -34,6 +34,11 @@ void draw() {
+      abs(mouseY - y) < vr) {
+    x += random(-5, 5);
+    y += random(-5, 5);
+    
+    if (x < 0) { x = 0; }
+    if (y < 0) { y = 0; }
+    if (x > width) { x = width; }
+    if (y > height) { y = height; }
+  }
+  fill(0, 82, 165);
+  ellipse (x, y, 60, 60); 
+@ -48,7 +53,6 @@ void draw() {
+  ellipse ( 70, x, 60, 60);
+  
+  fill (202, 185, 241);
+  ellipse ( y, 70, 60, 60);
+  
+  ellipse ( y, 70, 60, 60);  
+  //text("tickle", x, y);
+}
+```
+
 Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
+
+
 
