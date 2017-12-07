@@ -146,7 +146,7 @@ void draw() {
 I found that the circles moved outside of the screen and wasn't confide to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed.
 
 #### Step 3
-
+Collaboration for the problems 
 ```
 @ -34,6 +34,11 @@ void draw() {
       abs(mouseY - y) < vr) {
@@ -174,4 +174,55 @@ I found that the circles moved outside of the screen and wasn't confide to the v
 Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
 
 
+```
+@@ -9,6 +9,8 @@ String message = "tickle";
+float x, y; // X and Y coordinates of text
+float hr, vr;  // horizontal and vertical radius of the text
 
+boolean colourChanged = false;
+
+void setup() {
+  size(640, 360);
+  
+@ -23,12 +25,21 @@ void setup() {
+  y = height /2 ;
+}
+
+void draw() {
+    void mousePressed() {
+      
+      if (abs(mouseX - x) < hr &&
+      abs(mouseY - y) < vr) {
+        colourChanged = !colourChanged;
+      }
+   }
+    
+ void draw() {
+  // Instead of clearing the background, fade it by drawing
+  // a semi-transparent rectangle on top
+  fill(0, 10);
+  rect(0, 0, width, height);
+  
+
+ 
+  // If the cursor is over the text, change the position
+  if (abs(mouseX - x) < hr &&
+      abs(mouseY - y) < vr) {
+@ -40,7 +51,13 @@ void draw() {
+    if (x > width) { x = width; }
+    if (y > height) { y = height; }
+  }
+  fill(0, 82, 165);
+ 
+  if (colourChanged) {
+    fill(0, 82, 165);
+  } else {
+    fill (225);
+  }
+  
+  ellipse (x, y, 60, 60); 
+  
+  fill(140, 101, 211);
+  ```
+  
+  Modified by [Sophi-4](https://github.com/sophi-4): changed the colour of one.
