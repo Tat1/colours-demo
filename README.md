@@ -48,7 +48,9 @@ void draw() {
 
 ---
 
-I changed the code to focus on animations and how the user would interact with them. 
+#### Step 1
+
+I changed the tickle to an object which was a circle and with the tickle code it allowed me to interact and move the circle around the screen.
 ```
 String message = "tickle";
 float x, y; // X and Y coordinates of text
@@ -85,6 +87,10 @@ void draw() {
   
 }
 ```
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2012.18.17.png)
+
+#### Step 2
+I added four more circles to the current one and found that the four circles tickle when the middle one was moved.
 
 ```
 String message = "tickle";
@@ -137,7 +143,7 @@ void draw() {
 ```
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2012.05.23.png)
 
-
+I found that the circles moved outside of the screen and wasn't confide to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed.
 
 Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
 
