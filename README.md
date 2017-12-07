@@ -3,6 +3,7 @@
 An experimental animation that uses mouse interaction to allow the user to play around with the colours or to make it simpler a circular puzzle using colours. 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-11-30%20at%2014.28.42.png)
 
+---
 
 ### Process
 
@@ -44,6 +45,8 @@ void draw() {
 }
 ```
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2011.24.39.png)
+
+---
 
 I changed the code to focus on animations and how the user would interact with them. 
 ```
