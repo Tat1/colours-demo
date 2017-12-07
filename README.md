@@ -4,7 +4,10 @@
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-11-30%20at%2014.28.42.png)
 
+
+
 This code is based on the Processing example "tickle" as shown below 
+
 ```
 String message = "tickle";
 float x, y; // X and Y coordinates of text
@@ -40,6 +43,7 @@ void draw() {
   text("tickle", x, y);
 }
 ```
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2011.24.39.png)
 
 I changed the code
 **Original Idea** Focuses on animations and how the user would interact with them. 
