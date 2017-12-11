@@ -307,4 +307,8 @@ Next step was to change it into an interactive puzzle colour game.
 I finally got the basics of moving each of the cirlces individually and changing each of their colours.
 I made the two main colours red and green and the point is to get all of the colours one colour.
 
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.26.png)
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.47.png)
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.23.17.png)
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.23.02.png)
 
