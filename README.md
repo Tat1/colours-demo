@@ -302,4 +302,9 @@ void setup() {
   //text("tickle", x, y);
 }
 ```
-  
+---
+Next step was to change it into an interactive puzzle colour game.
+I finally got the basics of moving each of the cirlces individually and changing each of their colours.
+I made the two main colours red and green and the point is to get all of the colours one colour.
+
+
