@@ -281,7 +281,7 @@ void setup() {
   }
  // if the mousePressed happens the colour is changed if not it is left unchanged
   if (colourChanged) {
-    fill(0, 0, 165);
+    fill(0, 82, 165);
   } else {
     fill (225);
   }
