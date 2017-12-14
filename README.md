@@ -305,7 +305,7 @@ void setup() {
 ---
 Next step was to change it into an interactive puzzle colour game.
 I finally got the basics of moving each of the cirlces individually and changing each of their colours.
-I made the two main colours red and green and the point is to get all of the colours one colour.
+I made the two main colours red and green and the point is to get all of the colours to turn into the green colour.
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.26.png)
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.47.png)
@@ -427,9 +427,9 @@ void setup() {
   }
  // if the mousePressed happens the colour is changed if not it is left unchanged
   if (colourChanged) {
-    fill(230, 0, 0);
+    fill(81, 164, 82);
   } else {
-    fill (81, 164, 82);
+    fill ( 230, 0, 0);
   }
       ellipse (x, y, 60, 60); 
   
@@ -446,9 +446,9 @@ void setup() {
   }
   // if the mousePressed happens the colour is changed if not it is left unchanged
    if (zcolourChanged) {
-     fill (230, 0, 0);
+     fill (81, 164, 82);
     } else {
-      fill (81, 164, 82);
+      fill (230, 0, 0);
     }
         ellipse (zx, zy, 60, 60);
         
@@ -466,11 +466,10 @@ void setup() {
    }
    // if the mousePressed happens the colur is changed if not it is left unchanged
      if (tcolourChanged) {
-       fill (81, 164, 82);
+       fill ( 81, 164, 82);
      } else{
-       fill (230, 0, 0);
+       fill ( 230, 0, 0);
      }
          ellipse (tx, ty, 60, 60);
-   }   
-   
+   } 
    ```
