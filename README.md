@@ -525,4 +525,20 @@ I wanted the background of the game to cahnge each time it is clicked, the code 
   ```
    Collaboration by [sophi-4](https://github.com/sophi-4) and [Tat1](https://github.com/Tat1)
    
-   
+--- 
+### Instruction
+
+I added instructions to the game so that it is clear to the user on how to play the game
+
+```
+PFont font4; //for the title
+
+font4 = loadFont ("AmericanTypewriter-Bold-48.vlw"); //for the title
+
+//Title for the game
+  fill(234, 235, 240, 40);
+  textFont (font4, 25);
+  text("Solve the game by turning all the circles green", width/ 2, height/ 9);
+ ```  
+ 
+ ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2015.30.17.png) 
