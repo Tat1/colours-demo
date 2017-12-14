@@ -52,8 +52,8 @@ void setup() {
   hr = textWidth(message) / 2;
   vr = (textAscent() + textDescent()) / 2;
   noStroke();
-  x = width /2;
-  y = height /2 ;
+  x = width /1.5;
+  y = height /1.5 ;
   
   //for the second ball
   zhr = textWidth(zmessage) / 2;
@@ -66,8 +66,8 @@ void setup() {
   thr = textWidth(tmessage) / 2;
   tvr = (textAscent() + textDescent()) / 2;
   noStroke();
-  tx = width /1.5;
-  ty = height /1.5;
+  tx = width /2;
+  ty = height /2;
 }
 
     //created an if else statement
@@ -112,9 +112,9 @@ void setup() {
   }
  // if the mousePressed happens the colour is changed if not it is left unchanged
   if (colourChanged) {
-    fill(81, 164, 82);
+    fill(230, 0, 0);
   } else {
-    fill (230, 0, 0);
+    fill (81, 164, 82);
   }
       ellipse (x, y, 60, 60); 
   
@@ -151,9 +151,9 @@ void setup() {
    }
    // if the mousePressed happens the colur is changed if not it is left unchanged
      if (tcolourChanged) {
-       fill (230, 0, 0);
-     } else{
        fill (81, 164, 82);
+     } else{
+       fill (230, 0, 0);
      }
          ellipse (tx, ty, 60, 60);
    }   
