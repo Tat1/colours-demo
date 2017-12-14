@@ -6,6 +6,7 @@
 PFont font; 
 PFont font2;
 PFont font3;
+PFont font4; //for the title
 
 //Ball one
 String message = "tickle";
@@ -35,6 +36,7 @@ void setup() {
   font = loadFont ("DSEG14Classic-Bold-96.vlw"); //for the first ball
   font2 = loadFont ("DSEG14Classic-Bold-96.vlw"); //for the second ball
   font3 = loadFont ("DSEG14Classic-Bold-96.vlw"); //for the second ball
+  font4 = loadFont ("AmericanTypewriter-Bold-48.vlw"); //for the title
   
   // Load the font
   textFont(font, 36);// for the first ball
@@ -68,6 +70,8 @@ void setup() {
   noStroke();
   tx = width /2;
   ty = height /2;
+  
+
 }
 
     //created an if else statement
@@ -101,6 +105,11 @@ void setup() {
   // a semi-transparent rectangle on top
   fill(0, 10);
   rect(0, 0, width, height);
+  
+  //Title for the game
+  fill(234, 235, 240, 40);
+  textFont (font4, 25);
+  text("Solve the game by turning all the circles green", width/ 2, height/ 9);
 
 
  //cursor for ball one
