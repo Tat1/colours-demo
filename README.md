@@ -145,6 +145,22 @@ void draw() {
 
 I found that the circles moved outside of the screen and wasn't confide to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed.
 
+### Random Experimentation 
+
+I found when I changed the transparency of the code it made the cirlces distort into a paintbrush like effect which I found interesting. However, I did not want to add this to the final code as I wanted a sort of gamelike feature and not an artistic one.
+
+```
+void draw() {
+  // Instead of clearing the background, fade it by drawing
+  // a semi-transparent rectangle on top
+  fill(255, 0);
+  rect(0, 0, width, height);
+```
+
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2012.17.07.png)
+
+
+
 #### Step 3
 Collaboration for the problems
 ```
