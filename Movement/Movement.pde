@@ -91,12 +91,17 @@ void setup() {
             tcolourChanged = !zcolourChanged;
       }
    }
+
+       
+
+    
     
  void draw() {
   // Instead of clearing the background, fade it by drawing
   // a semi-transparent rectangle on top
   fill(0, 10);
   rect(0, 0, width, height);
+
 
  //cursor for ball one
   // If the cursor is over the object, change the position
@@ -157,6 +162,18 @@ void setup() {
      }
          ellipse (tx, ty, 60, 60);
    }   
+   
+    //Change in background when clicked 
+    void mouseClicked() {  
+      if (abs(mouseX - x) < hr &&
+      abs(mouseY - y) < vr) {
+        colourChanged = !colourChanged;
+      } else {
+        background (random(255), random(255), random(255)) ;
+      }
+      
+  }
+   
  /* 
   fill(140, 101, 211);
   ellipse (x, 40, 60, 60);
