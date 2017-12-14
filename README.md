@@ -1,13 +1,18 @@
 # colours-demo
 
-An experimental animation that uses mouse interaction to allow the user to play around with the colours or to make it simpler a circular puzzle using colours.
+An experimental animation that uses mouse interaction to allow the user to play around with the colours or to make it simpler a **circular puzzle using colours**.
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-11-30%20at%2014.28.42.png)
 
 ---
 
 ### Process
 
-This code is based on the Processing example "tickle" as shown below
+This code is based on the Processing example "tickle" as shown below.
+
+It allows movement when the cursor is hovered above the text "tickle". In addition it can be moved of the screen.
+
+https://processing.org/examples/tickle.html
+
 
 ```
 String message = "tickle";
@@ -90,7 +95,7 @@ void draw() {
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2012.18.17.png)
 
 #### Step 2
-I added four more circles to the current one and found that the four circles tickle when the middle one was moved.
+I added four more circles to the current one and found that the four circles tickle when the middle circle one was moved.
 
 ```
 String message = "tickle";
@@ -143,7 +148,9 @@ void draw() {
 ```
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-07%20at%2012.05.23.png)
 
-I found that the circles moved outside of the screen and wasn't confide to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed.
+I found that the circles moved outside of the screen and wasn't confided to the visible screen. In addition, I wanted different interactions to the circles such as changing the colour of each of the circles when pressed. 
+
+---
 
 ### Random Experimentation 
 
@@ -159,10 +166,12 @@ void draw() {
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2012.17.07.png)
 
-
+---
 
 #### Step 3
-Collaboration for the problems
+Below are the collaborations from others on how they **fixed the problems of the code**, which were the fact that the **circles moved out of the screen** and I wanted a **colour change to the circles** when you clicked on the circle.
+
+The code below allowed the circles to stay on the screen by limiting the circle to the measurements of the screen which were the x and y.
 ```
 @ -34,6 +34,11 @@ void draw() {
       abs(mouseY - y) < vr) {
@@ -186,10 +195,10 @@ Collaboration for the problems
   //text("tickle", x, y);
 }
 ```
-
+^
 Modified by [Nick](https://github.com/cassiel): avoid discs running off the edge.
 
-
+The code below allowed the colour of the circle to change when the middle circle was pressed.
 ```
 @@ -9,6 +9,8 @@ String message = "tickle";
 float x, y; // X and Y coordinates of text
@@ -240,7 +249,7 @@ void draw() {
 
   fill(140, 101, 211);
   ```
-
+^
   Modified by [Sophi-4](https://github.com/sophi-4): changed the colour of one.
 
   Changes made to the code that allows the colour change and disc limitations
@@ -319,9 +328,11 @@ void setup() {
 }
 ```
 ---
+### Game
+
 Next step was to change it into an interactive puzzle colour game.
-I finally got the basics of moving each of the cirlces individually and changing each of their colours.
-I made the two main colours red and green and the point is to get all of the colours to turn into the green colour.
+I finally got the basics of moving each of the cirlces individually and changing each of their colours individually.
+I made the two main colours, red and green, and the point is to get all of the colours to turn into the green colour.
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.26.png)
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-11%20at%2022.22.47.png)
@@ -491,7 +502,10 @@ void setup() {
    ```
 
    ---
-   Change in background when clicked
+   
+### Change in background when clicked
+
+I wanted the background of the game to cahnge each time it is clicked, the code below allows that to work. This was supposed to be an unusual feature that disrupted the normality of the game when the user interacts with the game.
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2011.06.03.png)
 
