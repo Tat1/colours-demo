@@ -479,4 +479,20 @@ void setup() {
 
 ![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2011.06.03.png)
 
+![screen grab](https://github.com/Tat1/colours-demo/blob/master/Screen%20Shot%202017-12-14%20at%2011.20.38.png)
+
+```
+//Change in background when clicked 
+    void mouseClicked() {  
+      if (abs(mouseX - x) < hr &&
+      abs(mouseY - y) < vr) {
+        colourChanged = !colourChanged;
+      } else {
+        background (random(255), random(255), random(255)) ;
+      }
+      
+  }
+  ```
    Collaboration by [sophi-4](https://github.com/sophi-4) and [Tat1](https://github.com/Tat1)
+   
+   
